@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>짭짤한맛 쇼핑몰</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+
+        <style>
+            .wrap {
+                width: 800px;
+                margin: 50px auto;
+            }
+
+            .info {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .image {
+                background-image: url("https://blogfiles.pstatic.net/MjAyMDEwMTRfMTk0/MDAxNjAyNjc4NTE4NDU2.6Bz8snGINaRRoe2t47D0b1cxH_pgdH7BJQqXSfaXAksg.MPxOcaqKMhCdJZzQ5P9FfOPhnbAcij6luafUbKyV2h0g.JPEG.khy8111/KakaoTalk_20201013_221858261.jpg");
+                background-size: cover;
+                background-position: center;
+                width: 800px;
+                height: 400px;
+                border-radius: 20px;
+            }
+
+            .order {
+                text-align: center;
+            }
+
+            h1, h5 {
+                display: inline;
+            }
+
+            * {
+                font-family: 'Nanum Gothic', sans-serif;
+            }
+
+            p {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+
+        </style>
+
+        <script>
+            function order() {
+                alert("주문이 완료되었습니다")
+            }
+        </script>
+
+
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="image"></div>
+            <div class="info">
+                <h1>스모어쿠키</h1>
+<!--                "&nbsp;"는 문장에 띄어쓰기를 주고싶을때 쓰는 언어-->
+                &nbsp;&nbsp;&nbsp;
+                <h5>가격: 3000원 / 개 </h5>
+<!--                "<br />"은 줄바꿈을 주고싶을때 사용하는 언어-->
+                <p>사랑하는 사람과 달콤한 추억을 나누어보세요. 가정집에서 정성들여 만든 달콤한 스모어쿠키!<br />
+                    신선한 버터와 좋은 재료만 사용해서 만들었습니다 :)</p>
+                <h2>주문하기</h2>
+            </div>
+            <div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">주문자 성함:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="order-name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">수량:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="order-count">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">주소:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="order-address">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">전화번호:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="order-phone">
+                    </div>
+                </div>
+                <div class="order">
+                    <button onclick="order()" type="button" class="orders btn btn-outline-secondary">주문하기</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
